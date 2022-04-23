@@ -22,7 +22,7 @@ $BMIpasien=
   new BMIpasien(3,$BMI[2],'2022-02-17', $pasien[2]),
 ] ;
 
-if (isset($_POST))
+if (isset($_POST['submit']))
 {
   $pasien[]= new pasien(4, $_POST['nama'], $_POST['tempatlahir'], $_POST['tanggal'], $_POST['email'] , $_POST['radio']);
   $BMI[]= new BMI($_POST['bb'], $_POST['tb']);
